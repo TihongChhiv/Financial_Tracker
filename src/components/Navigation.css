@@ -2,25 +2,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 40px; /* less height */
-  background: linear-gradient(135deg, #38a169, #2f855a); /* green gradient */
+  padding: 12px 40px; /* original size for desktop */
+  background: linear-gradient(135deg, #38a169, #2f855a);
   color: white;
   font-size: 20px;
   width: 100vw;
   box-sizing: border-box;
-  height: 80px; /* reduced height */
+  height: 80px; /* original height for desktop */
 }
 
 .logo {
-  font-size: 1.8rem; /* increased size */
+  font-size: 1.8rem;
   font-weight: bold;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .tabs {
   display: flex;
-  margin-right: 100px; /* move links left toward center */
+  margin-right: 100px;
 }
 
 .tabs a {
@@ -30,7 +31,7 @@
   background-color: rgba(255, 255, 255, 0.2);
   padding: 8px 16px;
   border-radius: 10px;
-  font-size: 1rem; /* increased font */
+  font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
@@ -42,4 +43,33 @@
   background-color: #ffffff;
   color: #2f855a;
   font-weight: bold;
+}
+
+/* Mobile fix only */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 16px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .tabs a {
+    margin: 5px 6px;
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
 }

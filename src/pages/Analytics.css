@@ -160,36 +160,51 @@
 /* Responsive design */
 @media (max-width: 768px) {
   .analytics-page {
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
   }
-  
+
   .analytics-page h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
-  
-  .analytics-dropdowns {
+
+  .analytics-page h4 {
+    font-size: 1.1rem;
+  }
+
+  .analytics-dropdowns,
+  .dropdowns {
     flex-direction: column;
     align-items: stretch;
   }
-  
-  .analytics-dropdowns select {
-    min-width: auto;
+
+  .analytics-dropdowns select,
+  .dropdowns select {
+    width: 100%;
+    min-width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
   }
-  
+
   .info-boxes {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
-  
+
   .box {
     max-width: 100%;
+    padding: 1rem;
   }
-  
-  .charts-grid {
+
+  .box h3 {
+    font-size: 1.5rem;
+  }
+
+  .charts-grid,
+  .chart-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .chart-box {
     padding: 1rem;
   }
