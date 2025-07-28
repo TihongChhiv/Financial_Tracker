@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px; /* less height */
+  background: linear-gradient(135deg, #38a169, #2f855a); /* green gradient */
+  color: white;
+  font-size: 20px;
+  width: 100vw;
+  box-sizing: border-box;
+  height: 80px; /* reduced height */
+}
+
+.logo {
+  font-size: 1.8rem; /* increased size */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  margin-right: 100px; /* move links left toward center */
+}
+
+.tabs a {
+  margin-left: 18px;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 1rem; /* increased font */
+  transition: background-color 0.3s ease;
+}
+
+.tabs a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tabs a.active {
+  background-color: #ffffff;
+  color: #2f855a;
+  font-weight: bold;
+}

@@ -1,0 +1,195 @@
+.journal-page {
+  padding: 1rem;
+  color: #111;
+  background-color: #f0f4f0;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .journal-page {
+    padding: 2rem 4rem;
+  }
+}
+
+.journal-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2c5530;
+  font-weight: bold;
+}
+
+/* Grid-style entry form */
+.add-entry {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #111;
+}
+
+.add-entry label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.add-entry input,
+.add-entry select {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #111;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-entry input:focus,
+.add-entry select:focus {
+  border-color: #00a651;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 166, 81, 0.2);
+}
+
+.add-btn {
+  background-color: #00a651;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  height: fit-content;
+  align-self: end;
+  transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #008f45;
+}
+
+/* Total Spending Box */
+.total {
+  background-color: #e1ffe1;
+  color: #004400;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive full-width table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: white;
+  color: #111;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f8f8;
+  font-weight: 600;
+  color: #333;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.add-entry-button-row {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.5);
+  margin-left: 0.25rem;
+}
+
+input[type="date"] {
+  padding-right: 1.75rem;
+}
+
+/* Custom category section */
+.custom-category-section {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #e9ecef;
+}
+
+.save-category-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.save-category-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .journal-page h2 {
+    font-size: 2rem;
+  }
+  
+  .add-entry {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  
+  .total {
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+  
+  th, td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}

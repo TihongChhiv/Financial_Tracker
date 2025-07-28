@@ -1,0 +1,196 @@
+.analytics-page {
+  padding: 2rem 4rem;
+  background-color: #eef6ef;
+  min-height: 100vh;
+}
+
+.analytics-page h2 {
+  text-align: center;
+  color: #2c5530;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.analytics-page h4 {
+  color: #2c5530;
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.analytics-dropdowns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.analytics-dropdowns select {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 9999px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #111;
+  cursor: pointer;
+  min-width: 180px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.analytics-dropdowns select:focus {
+  border-color: #00a651;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 166, 81, 0.2);
+}
+
+.info-boxes {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-weight: bold;
+}
+
+.box h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0 0 0;
+  font-weight: bold;
+}
+
+.green {
+  background-color: #d4fbd4;
+  color: #004400;
+}
+
+.yellow {
+  background-color: #fff4c4;
+  color: #664d00;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.chart-box {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  margin-bottom: 0;
+}
+
+.filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.filters-row label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.filters-row input,
+.filters-row select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.dropdowns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.dropdowns label {
+  font-weight: 500;
+  color: #222;
+}
+
+.dropdowns select {
+  margin-left: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 9999px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #111;
+  cursor: pointer;
+  min-width: 180px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dropdowns select:focus {
+  border-color: #00a651;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 166, 81, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .analytics-page {
+    padding: 1rem 2rem;
+  }
+  
+  .analytics-page h2 {
+    font-size: 2rem;
+  }
+  
+  .analytics-dropdowns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .analytics-dropdowns select {
+    min-width: auto;
+  }
+  
+  .info-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box {
+    max-width: 100%;
+  }
+  
+  .charts-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .chart-box {
+    padding: 1rem;
+  }
+}
